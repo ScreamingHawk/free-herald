@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Free Herald",
+  "version": "1.0",
+	"description": "Firefox plugin to optimise viewing of premium content on NZ Herald.",
+	"author": "Michael Standen",
+	"homepage_url": "https://github.com/ScreamingHawk/free-herald",
+	"developer": {
+		"name": "Michael Standen",
+		"url": "https://michael.standen.link"
+	},
+  "content_scripts": [
+    {
+      "matches": ["https://www.nzherald.co.nz/premium/*"],
+      "js": ["lib/jquery-3.5.0.slim.min.js", "freeherald.js"]
+    }
+  ]
+}
